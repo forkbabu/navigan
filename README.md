@@ -1,8 +1,11 @@
 # Navigating the GAN Parameter Space for Semantic Image Editing
 
-Authors official implementation of the [_Navigating the GAN Parameter Space for Semantic Image Editing_](https://arxiv.org/abs/2011.13786) by Anton Cherepkov, Andrey Voynov, and Artem Babenko.
+Authors official implementation of the CVPR'2021 paper [_Navigating the GAN Parameter Space for Semantic Image Editing_](https://arxiv.org/abs/2011.13786) by Anton Cherepkov, Andrey Voynov, and Artem Babenko.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/15aanLPN6_T2SHp0oQh3stIuESSfpNGuv?usp=sharing)
 
 __Main steps of our approach__:
+![An image](./images/scheme.png)
 * _First_: we form a low-dimensional subspace in the parameters space of a pretrained GAN;
 * _Second_: we solve an optimization problem to discover interpretable controls in this subspace.
 
@@ -235,6 +238,21 @@ _generators weights are the original models weights converted to pytorch (see cr
 
 
 You can find loading and deformation example at ```example.ipynb```
+
+----
+
+## Citation
+
+```
+@InProceedings{Navigan_CVPR_2021,
+    author    = {Cherepkov, Anton and Voynov, Andrey and Babenko, Artem},
+    title     = {Navigating the GAN Parameter Space for Semantic Image Editing},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {3671-3680}
+}
+```
 
 ----
 
